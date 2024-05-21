@@ -3,8 +3,6 @@ use std::env;
 use serenity::async_trait;
 use serenity::prelude::*;
 use serenity::model::channel::Message;
-use serenity::framework::standard::macros::{command, group};
-use serenity::framework::standard::{StandardFramework, Configuration, CommandResult};
 
 #[group]
 #[commands(ping)]
