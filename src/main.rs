@@ -17,8 +17,6 @@ impl EventHandler for Handler {}
 
 #[tokio::main]
 async fn main() {
-    let framework = StandardFramework::new().group(&GENERAL_GROUP);
-    framework.configure(Configuration::new().prefix("~")); // set the bot's prefix to "~"
 
     // Login with a bot token from the environment
     let token = env::var("DISCORD_TOKEN").expect("token");
