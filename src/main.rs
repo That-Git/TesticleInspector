@@ -14,7 +14,19 @@ impl EventHandler for Handler {
     // Event handlers are dispatched through a threadpool, and so multiple events can be
     // dispatched simultaneously.
     async fn message(&self, ctx: Context, msg: Message) {
-        if msg.content.to_ascii_lowercase() == "balls" {
+        if msg.content.to_ascii_lowercase() == "bollocks"
+            || msg.content.to_ascii_lowercase() == "balls"
+            || msg.content.to_ascii_lowercase() == "testicles"
+            || msg.content.to_ascii_lowercase() == "testies"
+            || msg.content.to_ascii_lowercase() == "testes"
+            || msg.content.to_ascii_lowercase() == "spheres"
+            || msg.content.to_ascii_lowercase() == "marbles"
+            || msg.content.to_ascii_lowercase() == "nuts"
+            || msg.content.to_ascii_lowercase() == "scrotum"
+            || msg.content.to_ascii_lowercase() == "sack"
+            || msg.content.to_ascii_lowercase() == "ballsack"
+            || msg.content.to_ascii_lowercase() == "nutsack"
+        {
             // Sending a message can fail, due to a network error, an authentication error, or lack
             // of permissions to post in the channel, so log to stdout when some error happens,
             // with a description of it.
