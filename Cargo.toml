@@ -1,11 +1,16 @@
 [package]
 name = "testicle_inspector"
-version = "0.1.0"
+version = "2.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bytes = "1.6.0"
+env_logger = "0.11.3"
+libsql = { version = "0.3.5", features = ["encryption"] }
+poise = "0.6.1"
+rand = "0.8.5"
 regex = "1.10.4"
-serenity = "0.12.1"
+serenity = { version = "0.12.1", default-features = false, features = ["builder", "client", "gateway", "model", "utils", "collector", "framework", "rustls_backend", "cache", "chrono"] }
 tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
